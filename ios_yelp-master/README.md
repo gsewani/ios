@@ -21,6 +21,6 @@ Started this very late as I got sick in the middle of the week, so code quality 
 
 Walkthrough of all user stories:
 
-![Video Walkthrough](http://imgur.com/PYlQiCI)
+![Video Walkthrough](http://imgur.com/PYlQiCI.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
