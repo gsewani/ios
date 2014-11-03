@@ -96,9 +96,15 @@
         
     }];
 }
+
+- (void) fetchTweets: (BOOL)initialLoad {
+    
+}
+
 - (void)onRefresh {
     [self fetchMovieData: false];
 }
+
 
 /*
 #pragma mark - Navigation

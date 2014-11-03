@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="112" id="KGk-i7-Jjw" customClass="TweetCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uDf-zn-J4V">
+                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="CNo-Wm-zZQ"/>
+                            <constraint firstAttribute="height" constant="50" id="PgZ-wX-gWI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@gautams88" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzI-kS-94o">
+                        <rect key="frame" x="162" y="8" width="72" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXN-xL-ewj">
+                        <rect key="frame" x="281" y="8" width="30.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some random tweet which is being read by" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5G1-VA-9tS">
+                        <rect key="frame" x="66" y="30" width="246" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Gautam Sewani" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J61-k2-JrC">
+                        <rect key="frame" x="66" y="8" width="88" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hXN-xL-ewj" secondAttribute="trailing" constant="8" id="0DU-Nq-HKD"/>
+                    <constraint firstAttribute="trailing" secondItem="5G1-VA-9tS" secondAttribute="trailing" constant="8" id="59H-KV-56F"/>
+                    <constraint firstItem="ZzI-kS-94o" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="6XI-jo-r9f"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5G1-VA-9tS" secondAttribute="bottom" constant="8" id="972-5S-XGw"/>
+                    <constraint firstItem="uDf-zn-J4V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Fw4-xx-vJz"/>
+                    <constraint firstItem="hXN-xL-ewj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZzI-kS-94o" secondAttribute="trailing" constant="8" id="IJ7-VU-70M"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uDf-zn-J4V" secondAttribute="bottom" constant="8" id="SQm-Mx-7DD"/>
+                    <constraint firstItem="5G1-VA-9tS" firstAttribute="leading" secondItem="uDf-zn-J4V" secondAttribute="trailing" constant="8" id="Vfu-DS-vMr"/>
+                    <constraint firstItem="J61-k2-JrC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ZtD-Hz-P1j"/>
+                    <constraint firstItem="hXN-xL-ewj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="bY7-b1-SZX"/>
+                    <constraint firstItem="5G1-VA-9tS" firstAttribute="leading" secondItem="uDf-zn-J4V" secondAttribute="trailing" constant="8" id="h52-Gi-Xtw"/>
+                    <constraint firstItem="uDf-zn-J4V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="hLP-61-ole"/>
+                    <constraint firstItem="ZzI-kS-94o" firstAttribute="leading" secondItem="J61-k2-JrC" secondAttribute="trailing" constant="8" id="jGm-Hl-A38"/>
+                    <constraint firstItem="J61-k2-JrC" firstAttribute="leading" secondItem="uDf-zn-J4V" secondAttribute="trailing" constant="8" id="odx-Nv-LW5"/>
+                    <constraint firstItem="5G1-VA-9tS" firstAttribute="top" secondItem="hXN-xL-ewj" secondAttribute="bottom" constant="8" id="rAW-gf-4wT"/>
+                    <constraint firstItem="hXN-xL-ewj" firstAttribute="leading" secondItem="ZzI-kS-94o" secondAttribute="trailing" constant="8" id="yLk-Ng-aor"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Vfu-DS-vMr"/>
+                        <exclude reference="yLk-Ng-aor"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="handle" destination="ZzI-kS-94o" id="C4w-M4-2fE"/>
+                <outlet property="name" destination="J61-k2-JrC" id="QST-Cm-gYV"/>
+                <outlet property="timeElapsed" destination="hXN-xL-ewj" id="Pdx-sU-AXU"/>
+                <outlet property="tweetText" destination="5G1-VA-9tS" id="9ba-ZA-arH"/>
+                <outlet property="tweeterImage" destination="uDf-zn-J4V" id="bun-6h-WkQ"/>
+            </connections>
+            <point key="canvasLocation" x="340" y="374"/>
+        </tableViewCell>
+    </objects>
+</document>
