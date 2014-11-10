@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *timeElapsed;
 @property (weak, nonatomic) IBOutlet UILabel *tweetText;
 @property (nonatomic, strong) Tweet *tweet;
+@property (nonatomic, strong) UIViewController* parentNavigationViewController;
 - (void) loadTweet:(Tweet *)tweet;
 - (NSString *)getTimeElapsedForDate:(NSDate *)date;
 @end

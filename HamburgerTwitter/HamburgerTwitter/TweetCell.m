@@ -8,10 +8,13 @@
 
 #import "TweetCell.h"
 #import "UIImageView+AFNetworking.h"
+#import "HamburgerViewController.h"
+#import "ProfileViewController.h"
 
 @implementation TweetCell
 
 - (void) loadTweet:(Tweet *)tweet {
+    self.tweet = tweet;
     self.name.text = tweet.user.name;
     self.handle.text = tweet.user.screenname;
     self.tweetText.text = tweet.text;
@@ -46,6 +49,17 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    UITapGestureRecognizer *imageTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onImageTap:)];
+    [self.tweeterImage addGestureRecognizer:imageTapGestureRecognizer];
+}
+
+- (void)onImageTap:(UITapGestureRecognizer *) t {
+    NSLog(@"in image tap");
+    ProfileViewController* pvc = [[ProfileViewController alloc]init];
+    pvc.user = self.tweet.user;
+    NSLog(@"url in tweetcell:%@",self.tweet.user.profileImageUrl);
+    //[HamburgerViewController sharedInstance].contentViewController = pvc;
+    [self.parentNavigationViewController.navigationController pushViewController:pvc animated:YES];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
